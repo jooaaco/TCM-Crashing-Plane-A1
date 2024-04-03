@@ -361,7 +361,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &630339736
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -729,6 +729,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2408924363467627011, guid: 1c6c6f512f88e494b94d7c75aff56805, type: 3}
   m_PrefabInstance: {fileID: 1083439260}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1625989186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1625989188}
+  - component: {fileID: 1625989187}
+  m_Layer: 0
+  m_Name: Coin Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1625989187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625989186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdd2375a49d8538468de7ab35fd7801e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnDelay: 3.2
+  _spawnAtBegining: 1
+  _useRandomPrefab: 1
+  _prefabs:
+  - {fileID: 8812634032716992951, guid: cbba9fa8cb2253349b6c803212752b01, type: 3}
+  - {fileID: 8812634032716992951, guid: 6f646c3460083a14bb51d27e53adbdf5, type: 3}
+  - {fileID: 8812634032716992951, guid: 20aa992fd6f71b541a9ded0786bc7184, type: 3}
+--- !u!4 &1625989188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625989186}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 0.231, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1688873222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1020,3 +1071,4 @@ SceneRoots:
   - {fileID: 2119483880}
   - {fileID: 684214253}
   - {fileID: 1846705571}
+  - {fileID: 1625989188}
